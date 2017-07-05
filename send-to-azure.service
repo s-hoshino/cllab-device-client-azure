@@ -1,0 +1,13 @@
+[Unit]
+Description = send-to-azure
+After = syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+WorkingDirectory = /home/pi/cllab-device-client-azure
+ExecStart = /home/pi/cllab-device-client-azure/send-to-azure.sh
+Restart = always
+Type = simple
+User = pi
+
+[Install]
+WantedBy = multi-user.target

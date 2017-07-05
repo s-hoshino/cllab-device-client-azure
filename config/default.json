@@ -1,0 +1,7 @@
+{
+    "connectionString": "YOUR_CONNECTION_STRING",
+    "dht11Pin": 14,
+    "isDemo": false,
+    "intervalSec": 60,
+    "deviceId": "device_001"
+}
